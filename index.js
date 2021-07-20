@@ -72,7 +72,7 @@ app.post('/api/persons', (request, response) => {
   const id = Math.round(Math.random() * 10000000000)
   const person = request.body
 
-  const diferent = people.find( dperson => dperson.name === person.name)
+  const diferent = persons.find( dperson => dperson.name === person.name)
 
   if(person.name.length === 0 || person.number.length === 0) {
     return response.status(411).json({error: 'Name not found or number not found'})
@@ -99,3 +99,5 @@ const PORT = process.env.PORT || 3001
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`)
 })
+
+//https://glacial-tundra-52621.herokuapp.com/info

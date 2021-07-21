@@ -102,3 +102,4 @@ app.listen(PORT, () => {
 })
 
 //https://glacial-tundra-52621.herokuapp.com/info
+//git add . or anythings ==> git commit am- "description" ==> npm run deploy  
